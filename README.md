@@ -12,6 +12,7 @@ Blue output = important look at it
 
 If the KD is over 1.5 their KD will be blue showing you to look at it, if their account level is under 150 it will also be blue.
 Example of blue KD and Blue levels
+
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/9df0444f-ba4f-44e3-ab76-f7b67a3cb132)
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/b200fab9-299e-4e09-9b6f-a8f4118c8aa2)
 
