@@ -21,6 +21,7 @@ Example of blue KD and Blue levels
 Red output = sus stats, you should probably dodge.
 
 If KD is over 2.0 it will show in red
+
 If the cheater is banned on stats.cc you will get a red error message showing they are banned.
 
 
@@ -29,6 +30,7 @@ Example
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/f975a3f2-38f1-49d6-8273-d4facc52647e)
 
 Green output = Person sucks so either an easy game or they are queued with a cheater
+
 Green output is if the player has under a 1.0 KD
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/b1d7ff9a-2d6e-4b3d-b05b-eac8dccf4985)
 
