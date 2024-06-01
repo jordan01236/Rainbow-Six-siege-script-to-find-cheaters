@@ -23,6 +23,7 @@ If KD is over 2.0 it will show in red
 If the cheater is banned on stats.cc you will get a red error message showing they are banned.
 
 Example
+
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/f975a3f2-38f1-49d6-8273-d4facc52647e)
 
 Green output = Person sucks so either an easy game or they are queued with a cheater
