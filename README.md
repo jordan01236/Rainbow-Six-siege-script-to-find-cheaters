@@ -1,4 +1,6 @@
 # Rainbow-Six-siege-script-to-find-cheaters
+If you have never used python before you will need to install requests and bs4 beautifulsoup with pip. 
+
 This script was coded in python and looks up everyone in your lobby. This works by grabbing the account IDs of all players by using the avatars folder and looks them up on stats.cc.
 
 This script is capable of getting stats before a game starts giving you a chance to dodge cheaters before it starts(this is rare as typically you instantly find a game but ive done it a few times)
@@ -32,6 +34,7 @@ Example
 Green output = Person sucks so either an easy game or they are queued with a cheater
 
 Green output is if the player has under a 1.0 KD
+
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/b1d7ff9a-2d6e-4b3d-b05b-eac8dccf4985)
 
 
