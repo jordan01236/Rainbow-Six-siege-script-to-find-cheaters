@@ -12,6 +12,7 @@ Blue output = important look at it
 
 If the KD is over 1.5 their KD will be blue showing you to look at it, if their account level is under 150 it will also be blue.
 
+
 Example of blue KD and Blue levels
 
 ![image](https://github.com/jordan01236/Rainbow-Six-siege-script-to-find-cheaters/assets/120287007/9df0444f-ba4f-44e3-ab76-f7b67a3cb132)
@@ -21,6 +22,7 @@ Red output = sus stats, you should probably dodge.
 
 If KD is over 2.0 it will show in red
 If the cheater is banned on stats.cc you will get a red error message showing they are banned.
+
 
 Example
 
