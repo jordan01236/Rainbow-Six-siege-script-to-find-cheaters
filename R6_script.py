@@ -2,6 +2,7 @@ import os
 import time
 import requests
 from bs4 import BeautifulSoup
+import re
 
 # Specify the folder path using raw string literal
 folder_path = r"C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\cache\avatars"
@@ -69,6 +70,14 @@ while True:
             else:
                 print("KD value not found")
 
+
+            # Find the matches played
+
+            matches = soup.find('div', class_='text-contrast-500').text.strip()
+            print(f"Matches: {matches}")
+
+
+
             # Find shitters
             if float(kd_value) < 1.0:
                 print(COLOR_GREEN + kd_value + " THIS GUY SUCKS" + COLOR_END)
@@ -111,6 +120,53 @@ while True:
             # Check if the account ID is in the list of cheaters
             if is_cheater(account_id):
                 print(COLOR_RED + BOLD + "Known Cheater" + COLOR_END)
+
+            #reputation bans
+            repBan = soup.find('h4', class_='flex items-center gap-2 p-3 border-b border-base-100').text.strip()
+
+            if repBan == "Reputation Bans":
+                print(COLOR_RED + BOLD +"Reputation Ban" + COLOR_END)
+            else:
+                print('')
+
+
+
+
+            #Previous Season Stats
+
+            # Find all elements that match the criteria
+            elements = soup.find_all('div', class_='flex w-full pl-2 pr-1 font-medium')
+
+            # Check if there are at least two matching elements
+            if len(elements) >= 2:
+                # Extract text from the second element (index 1)
+                input_string = elements[1].text.strip()
+
+                # Proceed with further processing on input_string
+                # Define your regex patterns and continue with your logic as before
+                kd_pattern = r'(\d+)(KD([\d.]+))'  # Example pattern
+                wr_pattern = r'(WR([\d%]+))'  # Example pattern
+
+                kd_match = re.search(kd_pattern, input_string)
+                wr_match = re.search(wr_pattern, input_string)
+
+                if kd_match and wr_match:
+                    matches_number = kd_match.group(1)  # Example processing
+                    kd_value = float(kd_match.group(3))  # Example processing
+
+                    # Your further processing logic here
+                    # ...
+
+                    # Example of formatted output
+                    formatted_output = f"Matches: {matches_number} KD: {kd_value} WR: {wr_match.group(2)}"
+                    print(formatted_output)
+                else:
+                    print("Input string does not match expected format.")
+            else:
+                print("Not enough matching elements found.")
+
+
+
 
             print()  # Add a new line after each account's data
 
